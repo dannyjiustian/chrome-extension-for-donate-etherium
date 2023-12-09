@@ -1,0 +1,22 @@
+@font-face {
+  font-family: poppins-medium;
+  src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+
+button#confennix_donate_button {
+  font-family: poppins-medium !important;
+  position: fixed;
+  padding: 10px 20px;
+  border-radius: 10px;
+  z-index: 9999999999;
+  cursor: pointer;
+  border: 0;
+  bottom: 20px;
+  right: 20px;
+  background-color: #4681f4;
+  letter-spacing: 1.25px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  box-shadow: rgb(70, 129, 255) 0px 4px 0px 0px;
+  color: hsl(0, 0%, 100%);
+}

@@ -1,0 +1,55 @@
+{
+  "name": "Confenni - Donate Plugin Etherium For Google Chrome",
+  "short_name": "confenni-plugin-eth-gc",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "author": "https://metamask.io",
+  "description": "A demonstration of Metamask integration",
+  "permissions": [
+    "activeTab",
+    "tabs"
+  ],
+  "icons": {
+    "16": "images/icon-16.png",
+    "128": "images/icon-128.png"
+  },
+  "action": {
+    "default_title": "MetaMask",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "content-script-bundle.js"
+      ],
+      "matches": [
+        "<all_urls>"
+      ],
+      "css": [
+        "css/popup.css",
+        "css/content-script.css"
+      ],
+      "media": [],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "css/content-script.css",
+        "fonts/Poppins/*.ttf"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ],
+  "externally_connectable": {
+    "matches": [
+      "https://metamask.io/*"
+    ],
+    "ids": [
+      "*"
+    ]
+  }
+}
